@@ -1,0 +1,229 @@
+:root{
+    --bg-color:#8D65E9;
+    --title-color:#1F1E36;
+    --text-color:#ABAAB1;
+    --ff:'Kumbh Sans', sans-serif;
+    --color-active:#F47B56;
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--ff);
+    margin: 1em 2em;
+    background-color: var(--bg-color);
+}
+
+/*container*/
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-width: 360px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    margin-top: 10em;
+}
+
+
+
+/* header - contain images container and images*/
+
+.card__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url('/images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 280px;
+}
+
+/*its a div that contain the two images with picture tag HTML*/
+.card__images{
+    transform: translateY(-100px);
+    width: 80%;
+    max-width: 400px;
+}
+
+.card__box-img{
+    display: none;
+}
+
+
+/* Main content - contain the texts and the accordion*/
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 1em 3em;
+}
+
+.card__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* card-texts - contain the two texts and the arrow img*/
+.card__texts{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1px;
+    padding: 1em 0.1em;
+    border-bottom: 1px rgb(0, 0, 0,0.3) solid;
+    box-shadow: -4px 11px 43px -97px rgba(0,0,0,0.75);
+
+}
+
+
+.card__accordion{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1em;
+}
+
+.card__question{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.card__question:hover{
+    cursor: pointer;
+    color: var(--color-active);
+}
+
+
+
+.card__bold{
+    font-weight: 700;
+}
+
+.card__answer{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+
+
+.card__arrow{
+    width: 12px;
+    height: 12px;
+}
+
+
+.card__arrow-active{
+    transform: rotate(180deg);
+}
+
+
+.card__arrow:hover{
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:940px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        font-family: var(--ff);
+        background-color: var(--bg-color);
+        overflow: hidden;
+
+    }
+
+
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        width: 1100px;
+        min-width: 800px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        gap: 3em;
+        margin-top: 3em;
+    }
+
+    .card__header{
+        position: relative;
+        width: 500px;
+        height: auto;
+        background-image: url('/images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: -70px;
+        background-size: 530px;
+    }
+    .card__images{
+
+        transform: translatex(-100px);
+        width: 80%;
+        max-width: 400px;
+    }
+
+
+
+    .card__box-img{
+        display: block;
+        position: absolute;
+        left: -35px;
+        top: 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .card__content{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 3em 0;
+        padding-right: 10em;
+        width: 650px;
+    }
+
+    .card__title{
+        text-align: left;
+    }
+
+
+    .card__texts{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1px;
+        padding: 1em 0.1em;
+        border-bottom: 1px rgb(0, 0, 0,0.3) solid;
+        box-shadow: -4px 11px 43px -97px rgba(0,0,0,0.75);
+
+    
+    }
+    
+    .card__accordion{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    
+
+
+}
+

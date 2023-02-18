@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ accordion card</title>
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="png/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main class="card">
+        <section class="card__header">
+            <div class="card__images">
+                <picture>
+                    <source srcset="
+                    /images/illustration-woman-online-mobile.svg," media="(max-width:940px)">
+                    <img src="/images/illustration-woman-online-desktop.svg" alt="Desktop image">                    
+                </picture>
+                <img src="/images/illustration-box-desktop.svg" alt="" class="card__box-img">
+            </div>
+            <!-- <div class="card__box"> -->
+               
+            <!-- </div> -->
+        </section>
+        <section class="card__content">
+            <h1 class="card__title">FAQ</h1>
+            <div class="card__texts">
+                <div class="card__accordion">
+                    <h2 class="card__question" id="bold1">How many teammembers can I invite?</h2>
+                    <p class="card__answer" id="paragraph1"></p>
+                </div>
+                <img src="/images/icon-arrow-down.svg" alt="" class="card__arrow" id="arrow1">
+            </div>
+            <div class="card__texts">
+                <div class="card__accordion">
+                    <h2 class="card__question" id="bold2">What is the maximum file upload size?</h2>
+                    <p class="card__answer" id="paragraph2"></p>
+                </div>
+                <img src="/images/icon-arrow-down.svg" alt="" class="card__arrow" id="arrow2">
+            </div>
+            <div class="card__texts">
+                <div class="card__accordion">
+                    <h2 class="card__question" id="bold3">How do i reset my password?</h2>
+                    <p class="card__answer" id="paragraph3"></p>
+                </div>
+                <img src="/images/icon-arrow-down.svg" alt="" class="card__arrow" id="arrow3">
+            </div>
+            <div class="card__texts">
+                <div class="card__accordion">
+                    <h2 class="card__question" id="bold4">Can i cancel my subscription</h2>
+                    <p class="card__answer" id="paragraph4"></p>
+                </div>
+                <img src="/images/icon-arrow-down.svg" alt="" class="card__arrow" id="arrow4">
+            </div>
+
+            <div class="card__texts">
+                <div class="card__accordion">
+                    <h2 class="card__question" id="bold5">Do you provide additional support</h2>
+                    <p class="card__answer" id="paragraph5"></p>
+                </div>
+                <img src="/images/icon-arrow-down.svg" alt="" class="card__arrow" id="arrow5">
+            </div>
+
+
+        </section>
+    </main>
+    <script src="/js/index.js" type="module"></script>
+</body>
+</html>
