@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github code](https://github.com/pabarcag/ping-simple-page)
-- Live Site URL: [Live site](https://pabarcag.github.io/ping-simple-page/)
+- Solution URL: [Github code](https://github.com/pabarcag/faq-acordeon-card)
+- Live Site URL: [Live site](https://pabarcag.github.io/faq-acordeon-card/)
 
 
 ## My process
